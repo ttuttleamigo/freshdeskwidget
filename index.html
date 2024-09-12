@@ -6,6 +6,19 @@
     <title>Freshworks Widget</title>
 </head>
 <body>
-    <iframe src="https://widget.freshworks.com/widgets/150000004839.js" width="100%" height="500" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <script>
+        window.fwSettings = {
+            'widget_id': 150000004839
+        };
+        !function() {
+            if ("function" != typeof window.FreshworksWidget) {
+                var n = function() {
+                    n.q.push(arguments)
+                };
+                n.q = [], window.FreshworksWidget = n
+            }
+        }();
+    </script>
+    <script type='text/javascript' src='https://widget.freshworks.com/widgets/150000004839.js' async defer></script>
 </body>
 </html>
